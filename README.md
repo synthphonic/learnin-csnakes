@@ -6,11 +6,11 @@
    - Open your terminal and navigate to the directory where you want to create your project.
    - Run the following command to create a new .NET console application:
      ```bash
-     dotnet new console -n MyCSnakesApp
+     dotnet new console -n csnakes-tutorial-1
      ```
    - Navigate into the project directory:
      ```bash
-     cd MyCSnakesApp
+     cd csnakes-tutorial-1
      ```
 
 2. **Add the CSnakes NuGet Package:**
@@ -18,6 +18,24 @@
      ```bash
      dotnet add package CSnakes.Runtime
      ```
+
+## Step 1.1: (Extra Step): Make the console app AOT
+  ```xml
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>net9.0</TargetFramework>
+    <RootNamespace>csnakes_tutorial_1</RootNamespace>
+    <ImplicitUsings>enable</ImplicitUsings>
+    
+    <Nullable>enable</Nullable>
+    <PublishAot>true</PublishAot>
+    <InvariantGlobalization>true</InvariantGlobalization>    
+    <PublishTrimmed>true</PublishTrimmed>
+    <TrimMode>link</TrimMode>
+    <IlcOptimizationPreference>Size</IlcOptimizationPreference>
+    <IlcLinkMode>link</IlcLinkMode>
+  </PropertyGroup>
+  ```
 
 ## Step 2: Set Up Python Environment
 
