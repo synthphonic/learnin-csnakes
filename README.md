@@ -1,6 +1,24 @@
-# Getting Started with CSnakes and .NET Console App
+## CSnakes - Where Python Meets .NET
 
-## Step 1: Set Up Your .NET Console Application
+## About CSnakes Architecture
+![Screenshot 2025-07-09 at 13 58 04](https://github.com/user-attachments/assets/8fbd3aeb-3a9f-41da-aa2e-2890ca19a622)
+
+## CSnakes - Supported .NET data types
+![Screenshot 2025-07-09 at 16 32 42 (2)](https://github.com/user-attachments/assets/fcf499b3-26b7-4bfd-a132-908cff5d00c0)
+
+## Adding Python Packages
+1. Use the requirements.txt file in the root folder.
+
+![Screenshot 2025-07-10 at 14 12 23](https://github.com/user-attachments/assets/a5e26aa7-f3fc-4027-a61f-a235fabfa9cc)
+
+2. Add the configuration to Program.cs
+
+![Screenshot 2025-07-10 at 14 12 45](https://github.com/user-attachments/assets/edf3cf34-5eca-46ca-8a2c-0949394a705b)
+
+   
+## Getting Started with CSnakes and .NET Console App
+
+### Step 1: Set Up Your .NET Console Application
 
 1. **Create a New .NET Console Project:**
    - Open your terminal and navigate to the directory where you want to create your project.
@@ -19,7 +37,7 @@
      dotnet add package CSnakes.Runtime
      ```
 
-## Step 1.1: (Extra Step): Make the console app AOT
+### Step 1.1: (Extra Step): Make the console app AOT
   ```xml
   <PropertyGroup>
     <OutputType>Exe</OutputType>
@@ -37,7 +55,7 @@
   </PropertyGroup>
   ```
 
-## Step 2: Set Up Python Environment
+### Step 2: Set Up Python Environment
 
 1. **Install Python:**
    - Ensure Python is installed on your system. You can download it from [python.org](https://www.python.org/downloads/).
@@ -74,7 +92,7 @@
       </ItemGroup>
      ```
 
-## Step 3: Configure Your .NET Application
+### Step 3: Configure Your .NET Application
 
 1. **Modify `Program.cs`:**
    - Open `Program.cs` and set up the Python environment and call the Python functions:
@@ -112,7 +130,7 @@
     Console.WriteLine("\n=== CSnakes is working successfully! ===");
    ```
 
-## Step 4: Build and Run Your Application
+### Step 4: Build and Run Your Application
 
 1. **Build the Project:**
    - Run the following command to build your project:
@@ -127,9 +145,6 @@
      ```
 
 You should see the output from both the standalone Python function and the class method in your console. This setup allows you to call Python code directly from your .NET application using CSnakes.
-
-## CSnakes - Supported .NET data types
-![Screenshot 2025-07-09 at 16 32 42 (2)](https://github.com/user-attachments/assets/fcf499b3-26b7-4bfd-a132-908cff5d00c0)
 
 ## Q&A - Common Issues and Solutions
 
