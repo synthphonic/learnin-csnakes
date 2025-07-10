@@ -20,10 +20,10 @@
   </ItemGroup>
 
   <ItemGroup>
-    <AdditionalFiles Include="Greeter.py">
+    <AdditionalFiles Include="python-scripts/Greeter.py">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </AdditionalFiles>
-    <AdditionalFiles Include="ScriptDemo.py">
+    <AdditionalFiles Include="python-scripts/ScriptDemo.py">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </AdditionalFiles>
   </ItemGroup>

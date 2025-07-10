@@ -1,9 +1,13 @@
-﻿Console.WriteLine("=== CSnakes Program 1 ===");
+﻿using System.Collections.Generic;
+using CSnakes.Runtime.Python;
+
+Console.WriteLine("=== CSnakes Program 1 ===");
 
 var builder = Host.CreateDefaultBuilder(args)
     .ConfigureServices((context, services) =>
     {
         var home = Path.Join(Environment.CurrentDirectory, ".");
+        var pythonScriptsPath = Path.Join(Environment.CurrentDirectory, "python-scripts");
         services
             .WithPython()
             .WithHome(home)
@@ -12,6 +16,10 @@ var builder = Host.CreateDefaultBuilder(args)
 
 var app = builder.Build();
 var env = app.Services.GetRequiredService<IPythonEnvironment>();
+
+// Add the python-scripts directory to sys.path
+var pythonScriptsPath = Path.Join(Environment.CurrentDirectory, "python-scripts");
+env.Execute($"import sys\nsys.path.insert(0, '{pythonScriptsPath.Replace("\\", "/")}')", new Dictionary<string, PyObject>(), new Dictionary<string, PyObject>());
 
 // Get the generated module
 var module = env.ScriptDemo();
