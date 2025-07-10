@@ -1,7 +1,4 @@
-﻿using System.Collections.Generic;
-using CSnakes.Runtime.Python;
-
-Console.WriteLine("=== CSnakes Program 1 ===");
+﻿Console.WriteLine("=== CSnakes Program 1 ===");
 
 var builder = Host.CreateDefaultBuilder(args)
     .ConfigureServices((context, services) =>
@@ -36,7 +33,7 @@ Console.WriteLine("\n3. Calling greet_with_custom_message function:");
 var customGreetResult = module.GreetWithCustomMessage("Alice", "Good morning");
 Console.WriteLine($"   Result: {customGreetResult}");
 
-Console.WriteLine("\n3. Calling process_multiple_greetings function:");
+Console.WriteLine("\n4. Calling process_multiple_greetings in the Greeter object:");
 var returnGreentings = module.ProcessMultipleGreetings(new[] { "Alice", "Bob", "Charlie" });
 foreach (var greeting in returnGreentings)
 {
