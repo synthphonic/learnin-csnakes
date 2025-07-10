@@ -28,4 +28,11 @@ Console.WriteLine("\n3. Calling greet_with_custom_message function:");
 var customGreetResult = module.GreetWithCustomMessage("Alice", "Good morning");
 Console.WriteLine($"   Result: {customGreetResult}");
 
+Console.WriteLine("\n3. Calling process_multiple_greetings function:");
+var returnGreentings = module.ProcessMultipleGreetings(new[] { "Alice", "Bob", "Charlie" });
+foreach (var greeting in returnGreentings)
+{
+    Console.WriteLine($"   Greeting: {greeting}");
+}
+
 Console.WriteLine("\n=== CSnakes is working successfully! ===");
