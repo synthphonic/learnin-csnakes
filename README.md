@@ -128,6 +128,9 @@
 
 You should see the output from both the standalone Python function and the class method in your console. This setup allows you to call Python code directly from your .NET application using CSnakes.
 
+## CSnakes - Supported .NET data types
+![Screenshot 2025-07-09 at 16 32 42 (2)](https://github.com/user-attachments/assets/fcf499b3-26b7-4bfd-a132-908cff5d00c0)
+
 ## Q&A - Common Issues and Solutions
 
 ### Q: How do I organize Python files in subdirectories?
