@@ -148,5 +148,4 @@ You should see the output from both the standalone Python function and the class
 
 ## Additional Resources
 - [Python Meets .NET: Building AI Solutions with Combined Strengths | BRK115](https://www.youtube.com/watch?v=fDbCqalegNU)
-- [Q&A - Common Issues and Solutions](QandA.md) - Troubleshooting guide for common CSnakes issues 
-- [Python Meets .NET: Building AI Solutions with Combined Strengths | BRK115](https://www.youtube.com/watch?v=fDbCqalegNU&t=3s)
+- [Q&A - Common Issues and Solutions](QandA.md) - Troubleshooting guide for common CSnakes issues
