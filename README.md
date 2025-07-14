@@ -147,6 +147,6 @@
 You should see the output from both the standalone Python function and the class method in your console. This setup allows you to call Python code directly from your .NET application using CSnakes.
 
 ## Additional Resources
-
+- [Python Meets .NET: Building AI Solutions with Combined Strengths | BRK115](https://www.youtube.com/watch?v=fDbCqalegNU)
 - [Q&A - Common Issues and Solutions](QandA.md) - Troubleshooting guide for common CSnakes issues 
 - [Python Meets .NET: Building AI Solutions with Combined Strengths | BRK115](https://www.youtube.com/watch?v=fDbCqalegNU&t=3s)
